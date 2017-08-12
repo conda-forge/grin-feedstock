@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_value }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py3k]
   entry_points:
     - grin = grin:grin_main
@@ -37,7 +37,7 @@ test:
 
 about:
   home: http://pypi.python.org/pypi/grin
-  license: BSD
+  license: BSD 3-Clause
   license_file: LICENSE.txt
   summary: Enhanced grep-like tool
   description: |
