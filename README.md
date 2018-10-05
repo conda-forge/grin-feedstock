@@ -16,9 +16,8 @@ Grin is Robert Kern's enhanced grep-like tool analagous to ack(-grep)
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/grin-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/grin-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/grin-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/grin-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/grin-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/grin-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/grin-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/grin-feedstock)
 
 Current release info
 ====================
