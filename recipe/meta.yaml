@@ -1,32 +1,27 @@
-{% set name = "grin" %}
 {% set version = "1.2.1" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "bf39303bc563c4f365365b5ff32e219dc2530a4469b7af25aa6a457ec2e29feb" %}
 
 package:
-  name: {{ name|lower }}
+  name: grin
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_value }}
+  url: https://pypi.io/packages/source/g/grin/grin-{{ version }}.tar.gz
+  sha256: bf39303bc563c4f365365b5ff32e219dc2530a4469b7af25aa6a457ec2e29feb
 
 build:
-  number: 1
-  skip: True  # [py3k]
+  number: 1001
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - grin = grin:grin_main
     - grind = grin:grind_main
-  script:
-    - pip install --no-deps .
 
 requirements:
   build:
-    - python
+    - python <3
     - pip 
   run:
-    - python
+    - python <3
 
 test:
   commands:
