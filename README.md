@@ -3,13 +3,13 @@ About grin
 
 Home: http://pypi.python.org/pypi/grin
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/grin-feedstock/blob/master/LICENSE.txt)
 
 Summary: Enhanced grep-like tool
 
-Development: https://github.com/rkern/grin
+Development: https://github.com/matthew-brett/grin
 
 Documentation: https://pypi.python.org/pypi/grin
 
