@@ -39,8 +39,8 @@ about:
     Grin is Robert Kern's enhanced grep-like tool analagous to ack(-grep)
     (perl), rak (ruby), and ag (C).
   doc_url: https://pypi.python.org/pypi/grin
-  doc_source_url: https://github.com/rkern/grin/blob/master/README.rst
-  dev_url: https://github.com/rkern/grin
+  doc_source_url: https://github.com/matthew-brett/grin/blob/master/README.rst
+  dev_url: https://github.com/matthew-brett/grin
 
 extra:
   recipe-maintainers:
