@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/g/grin/grin-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/g/grin/grin-{{ version }}.tar.gz
   sha256: a8e5a1cc9461322be76cee9bd91fd546d64bbb2fd78dce8acaea9c424ade0db2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -18,12 +18,15 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - grin -h
     - grind -h
